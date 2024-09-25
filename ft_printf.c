@@ -6,7 +6,7 @@
 /*   By: rtakashi <rtakashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 17:47:00 by rtakashi          #+#    #+#             */
-/*   Updated: 2023/03/15 19:44:00 by rtakashi         ###   ########.fr       */
+/*   Updated: 2023/03/07 18:33:49 by rtakashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,6 @@ int	ft_printf(const char *fmt, ...)
 			ans++;
 		}
 		i++;
-		if (i > INT_MAX)
-			return (-1);
 	}
 	va_end(ap);
 	return (ans);

@@ -6,7 +6,7 @@
 /*   By: rtakashi <rtakashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 22:17:02 by rtakashi          #+#    #+#             */
-/*   Updated: 2023/03/07 23:07:56 by rtakashi         ###   ########.fr       */
+/*   Updated: 2023/03/02 22:18:05 by rtakashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,9 @@ char	*change_ptr(unsigned long long ptr)
 	ans[1] = 'x';
 	while (ptr > 0)
 	{
-		// if (ptr % 16 < 10)
-		// 	ans[digit + 1] = ptr % 16 + '0';
-		// else
+		if (ptr % 16 < 10)
+			ans[digit + 1] = ptr % 16 + '0';
+		else
 			ans[digit + 1] = hex[ptr % 16];
 		ptr /= 16;
 		digit--;
@@ -80,9 +80,9 @@ char	*change_base(unsigned int ux, int base)
 		return (NULL);
 	while (digit > 0)
 	{
-		// if (ux % base < 10)
-		// 	ans[digit - 1] = ux % base + '0';
-		// else
+		if (ux % base < 10)
+			ans[digit - 1] = ux % base + '0';
+		else
 			ans[digit - 1] = hex[ux % base];
 		ux /= base;
 		digit--;
