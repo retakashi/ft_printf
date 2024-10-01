@@ -8,4 +8,4 @@ ft_printf can handle the following conversions: cspdiuxX%
 macOS
 
 ## Usage
-![gif](https://https://github.com/retakashi/ft_printf/blob/master/ft_printf.gif)
+![gif](https://github.com/retakashi/ft_printf/blob/master/ft_printf.gif)
