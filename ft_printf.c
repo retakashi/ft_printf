@@ -6,7 +6,7 @@
 /*   By: reira <reira@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/23 17:47:00 by rtakashi          #+#    #+#             */
-/*   Updated: 2024/10/01 18:23:43 by reira            ###   ########.fr       */
+/*   Updated: 2024/10/01 18:33:19 by reira            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,11 +82,14 @@ int	main(void)
 	char	*p;
 
 	p = "123hello, world";
-	ans1 = printf("!123\n");
-	ans2 = ft_printf("!123\n");
-	ans1 = printf("%d %c %s %p\n", INT_MAX, 'a', p, p);
-	ans2 = ft_printf("%d %d %s %p\n", INT_MAX, 5, p, p);
-	printf("ans1: %d\n", ans1);
-	ft_printf("ans2: %d\n", ans2);
+	printf("\n-------------------------- result ------------------------------\n");
+	ans1 = printf("printf: !123\n");
+	ans2 = ft_printf("ft_printf: !123\n");
+	printf("\n----------------------------------------------------------------\n");
+	ans1 = printf("printf: %d %c %s %p\n", INT_MAX, 'a', p, p);
+	ans2 = ft_printf("ft_printf: %d %c %s %p\n", INT_MAX, 'a', p, p);
+	printf("\n----------------------------------------------------------------\n");
+	printf("printf ans1: %d\n", ans1);
+	ft_printf("ft_printf ans2: %d\n", ans2);
 	return (0);
 }
